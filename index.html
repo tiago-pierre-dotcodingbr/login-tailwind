@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        body {
+          color: #1a202c;
+        }
+
+        button:hover {
+          cursor: pointer;
+        }
+
+        input[type='submit'] {
+          cursor: pointer;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="grid grid-cols-2 h-screen">
+      <section
+        class="grid bg-white-200 justify-center items-center sm:flex mm:hidden"
+      >
+        <img
+          src="/assets/logo.svg"
+          alt="Imagem com avatares de vários usuários ficticios."
+        />
+      </section>
+      <section class="flex flex-col justify-center items-center">
+        <form action="" class="min-w-[350px]">
+          <h1 class="font-title text-base">Bem vindo de volta</h1>
+          <h2 class="font-title text-2xl font-bold mb-10">
+            Faça login na sua conta
+          </h2>
+          <label for="email" class="text-base font-body block mb-2"
+            >E-mail</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="border border-border rounded w-50 h-12 w-full mb-2"
+          />
+          <label for="password" class="text-base font-body block mb-2"
+            >Senha</label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="border border-border rounded w-50 h-12 w-full mb-7"
+          />
+          <div class="flex justify-between items-center mb-8">
+            <div class="flex justify-between items-center">
+              <input type="radio" name="remember" id="remember" class="mr-2" />
+              <label for="remenber" class="text-xs font-body"
+                >Lembre de mim</label
+              >
+            </div>
+            <a href="#" class="text-xs font-body text-purplelight"
+              >Esqueceu sua senha?</a
+            >
+          </div>
+          <input
+            type="submit"
+            value="Entrar"
+            class="bg-green text-white font-bold w-full h-12 rounded mb-2 text-base font-body"
+          />
+
+          <a
+            href="#"
+            class="flex justify-center items-center bg-gray text-white font-bold w-full h-12 rounded mb-2 text-base font-body"
+          >
+            <img src="/assets/google.svg" alt="google icon" class="mr-2" />
+            Ou faça login com o Google
+          </a>
+        </form>
+
+        <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+      </section>
+    </main>
+  </body>
+</html>
