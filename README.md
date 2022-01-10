@@ -12,7 +12,7 @@
 </p>
 
 <br>
-<h1>📌Login page com Tailwind</h1>
+
 <p align="center">
   <img alt="login-page" src="https://github.com/tiagopierre/login-tailwind/blob/main/assets/screencapture-127-0-0-1-5500-index-html-2022-01-10-15_12_03.png?raw=true" width="100%">
 </p>
